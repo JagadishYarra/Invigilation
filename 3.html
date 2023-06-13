@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Time Table</title>
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
+  <style>
+    table {
+      border-collapse: collapse;
+      width: 80%;
+      margin-left: 250px;
+    }
+    th, td {
+      padding: 8px;
+      text-align: center;
+      border: 1px solid #ddd;
+    }
+    th {
+      background-color: #f2f2f2;
+    }
+    tr:nth-child(even) {
+      background-color: #f9f9f9;
+    }
+    input[type="submit"] {
+      background-color: #4CAF50;
+      color: white;
+      padding: 10px 20px;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+      font-size: 16px;
+    }
+    input[type="submit"]:hover {
+      background-color: #45a049;
+    }
+    .button-container {
+      display: flex;
+      justify-content: center;
+      margin-top: 20px;
+      padding-left: 270px;
+    }
+  </style>
+</head>
+<body>
+  <div class="w3-sidebar w3-teal w3-bar-block" style="width:20%">
+    <a href="display1.php"class="w3-bar-item" style="font-size:24px;font-weight:bold;font-family:Helvetica,Arial,sans-serif;text-decoration: none;"><i class="fas fa-home"></i> The Invigilator</a>
+    <a href="schedule.php" class="w3-bar-item w3-button">Schedule</a>
+    <a href="index.php" class="w3-bar-item w3-button">Edit</a>
+    <a href="3.html" class="w3-bar-item w3-button">Avaliability</a>
+    <a href="changepassword.php" class="w3-bar-item w3-button">Change Password</a>
+    <a href="login.html" class="w3-bar-item w3-button">Logout</a>
+  </div>
+  <br>
+  <h1 style="padding-left: 640px;font-family:Helvetica,Arial,sans-serif;">Time Table input</h1>
+  <br>
+  <form method="post" action="2.php">
+  <table>
+    <tr>
+      <th>Weekdays</th>
+      <th>Slot 1</th>
+      <th>Slot 2</th>
+      <th>Slot 3</th>
+      <th>Slot 4</th>
+      <th>Slot 5</th>
+      <th>Slot 6</th>
+      <th>Slot 7</th>
+      <th>Slot 8</th>
+      <th>Slot 9</th>
+    </tr>
+    <tr>
+      <td>Monday</td>
+      <td><input type="checkbox" name="Monday[slot1]"></td>
+      <td><input type="checkbox" name="Monday[slot2]"></td>
+      <td><input type="checkbox" name="Monday[slot3]"></td>
+      <td><input type="checkbox" name="Monday[slot4]"></td>
+      <td><input type="checkbox" name="Monday[slot5]"></td>
+      <td><input type="checkbox" name="Monday[slot6]"></td>
+      <td><input type="checkbox" name="Monday[slot7]"></td>
+      <td><input type="checkbox" name="Monday[slot8]"></td>
+      <td><input type="checkbox" name="Monday[slot9]"></td>
+    </tr>
+
+    <tr>
+      <td>Tuesday</td>
+      <td><input type="checkbox" name="Tuesday[slot1]"></td>
+      <td><input type="checkbox" name="Tuesday[slot2]"></td>
+      <td><input type="checkbox" name="Tuesday[slot3]"></td>
+      <td><input type="checkbox" name="Tuesday[slot4]"></td>
+      <td><input type="checkbox" name="Tuesday[slot5]"></td>
+      <td><input type="checkbox" name="Tuesday[slot6]"></td>
+      <td><input type="checkbox" name="Tuesday[slot7]"></td>
+      <td><input type="checkbox" name="Tuesday[slot8]"></td>
+      <td><input type="checkbox" name="Tuesday[slot9]"></td>
+    </tr>
+    
+    <tr>
+      <td>Wednesday</td>
+      <td><input type="checkbox" name="Wednesday[slot1]"></td>
+      <td><input type="checkbox" name="Wednesday[slot2]"></td>
+      <td><input type="checkbox" name="Wednesday[slot3]"></td>
+      <td><input type="checkbox" name="Wednesday[slot4]"></td>
+      <td><input type="checkbox" name="Wednesday[slot5]"></td>
+      <td><input type="checkbox" name="Wednesday[slot6]"></td>
+      <td><input type="checkbox" name="Wednesday[slot7]"></td>
+      <td><input type="checkbox" name="Wednesday[slot8]"></td>
+      <td><input type="checkbox" name="Wednesday[slot9]"></td>
+
+    </tr>
+    <tr>
+      <td>Thursday</td>
+      <td><input type="checkbox" name="Thursday[slot1]"></td>
+      <td><input type="checkbox" name="Thursday[slot2]"></td>
+      <td><input type="checkbox" name="Thursday[slot3]"></td>
+      <td><input type="checkbox" name="Thursday[slot4]"></td>
+      <td><input type="checkbox" name="Thursday[slot5]"></td>
+      <td><input type="checkbox" name="Thursday[slot6]"></td>
+      <td><input type="checkbox" name="Thursday[slot7]"></td>
+      <td><input type="checkbox" name="Thursday[slot8]"></td>
+      <td><input type="checkbox" name="Thursday[slot9]"></td>
+
+    </tr>
+    <tr>
+      <td>Friday</td>
+      <td><input type="checkbox" name="Friday[slot1]"></td>
+      <td><input type="checkbox" name="Friday[slot2]"></td>
+      <td><input type="checkbox" name="Friday[slot3]"></td>
+      <td><input type="checkbox" name="Friday[slot4]"></td>
+      <td><input type="checkbox" name="Friday[slot5]"></td>
+      <td><input type="checkbox" name="Friday[slot6]"></td>
+      <td><input type="checkbox" name="Friday[slot7]"></td>
+      <td><input type="checkbox" name="Friday[slot8]"></td>
+      <td><input type="checkbox" name="Friday[slot9]"></td>
+    </tr>
+  </table>
+  <br>
+  <div class="button-container">
+    <input type="submit" value="Update">
+  </div>
+</form>
+</body>
+</html>
